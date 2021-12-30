@@ -104,7 +104,6 @@ wire                                         bb_csb1                 ;
 wire         [`BB_ADRES_BIT-1:0]             bb_addr1                ;
 wire         [31:0]                          bb_dout1                ;    
 
-assign io_oeb = {(38){wb_rst_i}};
 
 c0_system mprj (
     `ifdef USE_POWER_PINS
@@ -120,10 +119,6 @@ c0_system mprj (
 
     .rx         (io_in[0]),
     .tx         (io_out[1]),
-    .bbb_buy_ps_g_w (io_out[33:2]),
-    .bbb_buy_gecerli_g_w (io_out[34]),
-    
-    // .count      (io_out[31:16]),
 
     .bb_csb0                                           (bb_csb0)                                                       ,
     .bb_web0                                           (bb_web0)                                                       ,
@@ -145,10 +140,10 @@ c0_system mprj (
 
     .vb_csb1                                           (vb_csb1)                                                       ,
     .vb_addr1                                          (vb_addr1)                                                      ,
-    .vb_dout1                                          (vb_dout1)                                                      
+    .vb_dout1                                          (vb_dout1)                                                      ,
 );
 
-sky130_sram_2kbyte_1rw1r_32x512_8 VB_SRAM
+sky130_sram_1kbyte_1rw1r_32x256_8 VB_SRAM
 (
     `ifdef USE_POWER_PINS
         .vccd1(vccd1),
@@ -168,7 +163,7 @@ sky130_sram_2kbyte_1rw1r_32x512_8 VB_SRAM
     .dout1              (vb_dout1)     
 );
 
-sky130_sram_2kbyte_1rw1r_32x512_8 BB_SRAM
+sky130_sram_1kbyte_1rw1r_32x256_8 BB_SRAM
 (
     `ifdef USE_POWER_PINS
         .vccd1(vccd1),

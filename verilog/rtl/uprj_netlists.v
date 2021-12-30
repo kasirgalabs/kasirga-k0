@@ -23,6 +23,36 @@
     `include "gl/user_project_wrapper.v"
     `include "gl/user_proj_example.v"
 `else
+    `include "c0_rtl/axil_slave_gfa.v"
+    `include "c0_rtl/adres_tekleyici.v"
+    `include "c0_rtl/aritmetik_mantik_birimi.v"
+    `include "c0_rtl/axil_interconnect.v"
+    `include "c0_rtl/baslangic_bellegi.v"
+    `include "c0_rtl/bellek_islem_birimi.v"
+    `include "c0_rtl/buyruk_bellegi_sram.v"
+    `include "c0_rtl/cekirdek.v"
+    `include "c0_rtl/dallanma_birimi.v"
+    `include "c0_rtl/denetim_durum_birimi.v"
+    `include "c0_rtl/getir_coz.v"
+    `include "c0_rtl/mikroislem.vh"
+    `include "c0_rtl/on_taraf.v"
+    `include "c0_rtl/sabitler.vh"
+    `include "c0_rtl/UART_alici.v"
+    `include "c0_rtl/UART_GFA.v"
+    `include "c0_rtl/UART_verici.v"
+    `include "c0_rtl/iki_bit_adimli_bolucu.v"
+    `include "c0_rtl/tamsayi_bolme_birimi.v"
+    `include "c0_rtl/iki_bit_adimli_carpici.v"
+    `include "c0_rtl/tamsayi_carpma_birimi.v"
+    `include "c0_rtl/veri_bellegi_sram.v"
+    `include "c0_rtl/yazmac_obegi.v"
+    `include "c0_rtl/yazmac_oku_yurut.v"
+    `include "c0_rtl/yazmac_yaz.v"
+    `include "c0_rtl/sky130_sram_2kbyte_1rw1r_32x512_8.v"
+    `include "c0_rtl/c0_system.v"
     `include "user_project_wrapper.v"
-    `include "user_proj_example.v"
 `endif
+
+
+
+
