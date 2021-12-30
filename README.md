@@ -18,11 +18,9 @@ Table of contents
 Overview
 ========
 
-This repo contains a RISC-V based SoC (K0) that utilizes the``caravel``chip user space.
-K0 is an ASIC-compatible SoC that has a RISC-V core with RV32-IM ISA and UART module @ 115200 baudrate. The
-repo also contains all required files to run any rv32-im tests programming through UART.
-
-
+This repo contains the RISC-V based K0 SoC that utilizes ``caravel`` chip user space.
+K0 is an silicon-proven SoC that has a RISC-V core (RV32-IM ISA) and AN UART module @ 115200 baudrate.
+The repo also contains all required files to run all RV32-IM ISA tests.
 
 # K0 Block Diagram
 
