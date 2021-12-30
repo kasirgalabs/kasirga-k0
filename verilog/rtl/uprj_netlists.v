@@ -21,7 +21,7 @@
     // Assume default net type to be wire because GL netlists don't have the wire definitions
     `default_nettype wire
     `include "gl/user_project_wrapper.v"
-    `include "gl/user_proj_example.v"
+    `include "gl/c0_system.v"
 `else
     `include "c0_rtl/axil_slave_gfa.v"
     `include "c0_rtl/adres_tekleyici.v"
