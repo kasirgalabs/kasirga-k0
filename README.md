@@ -18,8 +18,7 @@ Table of contents
 Overview
 ========
 
-This repo contains a RISC-V based SoC (K0) that utilizes the
-`caravel <https://github.com/efabless/caravel.git>`__ chip user space.
+This repo contains a RISC-V based SoC (K0) that utilizes the``caravel``chip user space.
 K0 is an ASIC-compatible SoC that has a RISC-V core with RV32-IM ISA and UART module @ 115200 baudrate. The
 repo also contains all required files to run any rv32-im tests programming through UART.
 
@@ -56,11 +55,9 @@ TBA
 -  ✔️ Full Chip Simulation passes for RTL and GL (gate-level)
 -  ✔️ The hardened Macros are LVS and DRC clean
 -  ✔️ The project contains a gate-level netlist for ``user_project_wrapper`` at verilog/gl/user_project_wrapper.v
--  ✔️ The hardened ``user_project_wrapper`` adheres to the same pin
-   order specified at
-   `pin\_order <https://github.com/efabless/caravel/blob/master/openlane/user_project_wrapper_empty/pin_order.cfg>`__
--  ✔️ The hardened ``user_project_wrapper`` adheres to the fixed wrapper configuration specified at `fixed_wrapper_cfgs <https://github.com/efabless/caravel/blob/master/openlane/user_project_wrapper_empty/fixed_wrapper_cfgs.tcl>`__
+-  ✔️ The hardened ``user_project_wrapper`` adheres to the same pin order specified at ``pin\_order``
+-  ✔️ The hardened ``user_project_wrapper`` adheres to the fixed wrapper configuration specified at ``fixed_wrapper_cfgs``
 -  ✔️ XOR check passes with zero total difference.
 -  ✔️ Openlane summary reports are retained under ./signoff/
--  ✔️ The design passes the `mpw-precheck <https://github.com/efabless/mpw_precheck>`__ 
+-  ✔️ The design passes the ``mpw-precheck``
 
