@@ -38,7 +38,7 @@ set ::env(FP_PDN_CORE_RING) 1
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
 	$script_dir/../../verilog/c0_rtl/sabitler.vh \
-	$script_dir/../../verilog/c0_rtl/kb2_wrapper.v"
+	$script_dir/../../verilog/rtl/user_project_wrapper.v"
 
 ## Clock configurations
 set ::env(CLOCK_PORT) "user_clock2"
